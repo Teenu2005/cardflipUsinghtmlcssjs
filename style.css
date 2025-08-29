@@ -101,6 +101,9 @@ li {
   background: white;
   padding: 0.5em;
   width: 500px;
+  border: 2px solid gray;
+  border-radius: 1em;
+  margin-left: 30%;
 }
 .end button {
   padding: 0.4em !important;
@@ -109,3 +112,4 @@ li {
   background: #001517;
   cursor: pointer;
 }
+
