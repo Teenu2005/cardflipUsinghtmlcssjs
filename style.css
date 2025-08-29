@@ -1,0 +1,111 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+body {
+  background: #c3f4f9 !important;
+}
+.contanier {
+  height: 97vh !important;
+}
+img {
+  height: 30vh !important;
+  margin-inline: 20% !important;
+  border: 1px solid #b7ecf2;
+}
+/* [class ~= row]{
+} */
+
+img:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgb(6, 183, 207), -4px -4px 10px rgb(6, 183, 207);
+}
+.audio {
+  display: none;
+}
+.contanier {
+  display: none;
+}
+
+[class*="col-sm-3"] {
+  background: #c3f4f9 !important;
+  border: none !important;
+  position: absolute;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-direction: reverse;
+}
+@keyframes example {
+  0% {
+    transform: rotateX(360deg);
+  }
+  /* 100% {  transform: rotatey(180deg);} */
+}
+
+[class*="sparkle"] {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: url(./asserts/sparkel.png);
+  border-radius: 100%;
+  animation: twinkle 1s linear forwards;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+    transform: scale(4);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(5.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.card {
+  background: #c3f4f9 !important;
+  border: none !important;
+}
+#nav {
+  background: #03b3c6;
+  display: flex;
+  justify-content: space-around;
+  height: 3em !important;
+  padding: auto !important;
+  color: white;
+}
+#score #timer {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  background: #001517;
+  border: 2px solid #03b3c6;
+  margin: 1em !important;
+}
+li {
+  list-style: none;
+}
+.liitem {
+  margin: auto;
+  /* text-align: end; */
+}
+
+#body {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
+.end {
+  background: white;
+  padding: 0.5em;
+  width: 500px;
+}
+.end button {
+  padding: 0.4em !important;
+}
+.end button:hover {
+  background: #001517;
+  cursor: pointer;
+}
