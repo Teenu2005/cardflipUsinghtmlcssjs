@@ -109,9 +109,9 @@ function close() {
         endcard.innerHTML = `
                             <h3>Game Over</h3>
                             <p>You won the game <br> 
-                            You finished the game within ${tim} <br> 
+                            You finished the game within ${tim.substring(5,10)} <br> 
                             </p>
-                            <button type="button" class="btn bg-primary" onclick="location.reload()" id="resatart">Play again</button>
+                            <button type="button" class="btn bg-primary" onclick="location.reload()" id="resatart">Beet your best</button>
                         `;
         endcard.classList.add("end");
         document.getElementById("body").innerHTML = "";

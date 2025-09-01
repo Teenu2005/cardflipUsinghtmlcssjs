@@ -100,10 +100,10 @@ li {
 .end {
   background: white;
   padding: 0.5em;
-  width: 500px;
+  width:50vw;
   border: 2px solid gray;
   border-radius: 1em;
-  margin-left: 30%;
+  margin-left:20vw;
 }
 .end button {
   padding: 0.4em !important;
