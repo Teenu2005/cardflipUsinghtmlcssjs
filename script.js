@@ -122,8 +122,8 @@ function close() {
     } else {
       setInterval(() => {
         if (opendimg.length >= 2) {
-          opendimg[0].src = "../asserts/bgCard.jpg";
-          opendimg[1].src = "../asserts/bgCard.jpg";
+          opendimg[0].src = "./asserts/bgCard.jpg";
+          opendimg[1].src = "./asserts/bgCard.jpg";
           opendimg[0].classList.remove("flipped");
           opendimg[1].classList.remove("flipped");
           audios[0].play();
@@ -176,5 +176,4 @@ function stop() {
 function reset() {
   stop();
   h = m = s = 0;
-  console.log("00:00:00");
 }
