@@ -109,9 +109,9 @@ function close() {
         endcard.innerHTML = `
                             <h3>Game Over</h3>
                             <p>You won the game <br> 
-                            You finished the game within ${tim} <br> 
+                            You finished the game within ${tim.substring(5,10)} <br> 
                             </p>
-                            <button type="button" class="btn bg-primary" onclick="location.reload()" id="resatart">Play again</button>
+                            <button type="button" class="btn bg-primary" onclick="location.reload()" id="resatart">Beet your best</button>
                         `;
         endcard.classList.add("end");
         document.getElementById("body").innerHTML = "";
@@ -122,8 +122,8 @@ function close() {
     } else {
       setInterval(() => {
         if (opendimg.length >= 2) {
-          opendimg[0].src = "../asserts/bgCard.jpg";
-          opendimg[1].src = "../asserts/bgCard.jpg";
+          opendimg[0].src = "./asserts/bgCard.jpg";
+          opendimg[1].src = "./asserts/bgCard.jpg";
           opendimg[0].classList.remove("flipped");
           opendimg[1].classList.remove("flipped");
           audios[0].play();
@@ -176,5 +176,4 @@ function stop() {
 function reset() {
   stop();
   h = m = s = 0;
-  console.log("00:00:00");
 }
