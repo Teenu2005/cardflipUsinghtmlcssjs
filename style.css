@@ -98,18 +98,50 @@ li {
   margin: auto;
 }
 .end {
-  background: white;
-  padding: 0.5em;
-  width:50vw;
+  background: rgb(133, 181, 192);
+  padding: 1em !important;
+  width:30vw;
   border: 2px solid gray;
   border-radius: 1em;
-  margin-left:20vw;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 10vh 35vw!important;
 }
 .end button {
   padding: 0.4em !important;
 }
 .end button:hover {
-  background: #001517;
+  background: #0b1772;
   cursor: pointer;
 }
 
+#resatart{
+  background: rgb(91, 91, 192);
+  padding: .5em !important;
+  width: 40%;
+  margin: 2% 30% !important;
+}
+.end h3{
+  width: 50%;
+  margin: .5em 40% !important;
+}
+
+@media screen and (min-width: 480px) {
+  [class *= "mrow"]{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  [class *= "mcol"]{
+    max-width: 40%;
+    margin-inline:5%;
+  }
+  img{
+    height: 30vh !important;
+    margin-inline: 20% !important;
+    border: 1px solid #b7ecf2;
+    min-width:80%;
+    }
+}

@@ -177,3 +177,29 @@ function reset() {
   stop();
   h = m = s = 0;
 }
+
+
+// css for phone
+function resize(){
+if (window.screen.availWidth <= 577){
+  let row = document.querySelectorAll('.row')
+  let col = document.querySelectorAll('.col-sm-3')
+  row.forEach((elem,index)=>{
+    elem.classList.remove('row')
+    elem.classList.add('mrow')
+  })
+  col.forEach((elem,index)=>{
+    elem.classList.remove('col-sm-3')
+    elem.classList.add('mcol')
+  })
+}
+
+
+
+
+}
+window.addEventListener('resize', ()=>{
+  console.log(window.screen.availWidth)
+  resize()
+})
+ resize()
